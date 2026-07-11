@@ -1,0 +1,195 @@
+# Simple Banking Application
+
+## Overview
+
+The Simple Banking Application is a command-line application developed in Python that simulates basic banking operations. It allows users to manage their account balance and KYC (Know Your Customer) information through a menu-driven interface while demonstrating fundamental Python programming concepts.
+
+---
+
+## Features
+
+- Check current account balance
+- Deposit money into the account
+- Withdraw money from the account
+- View KYC details
+- Add or update KYC documents
+- Menu-driven user interface
+- Input validation for banking operations
+
+---
+
+## Technologies Used
+
+- Python 3.x
+
+---
+
+## Project Structure
+
+```
+Simple-Banking-Application/
+│
+├── banking_application.py
+└── README.md
+```
+
+---
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Ojasvi-19/Simple-Banking-Application.git
+```
+
+### Navigate to the Project Directory
+
+```bash
+cd Simple-Banking-Application
+```
+
+### Run the Application
+
+```bash
+python banking_application.py
+```
+
+---
+
+## Menu Options
+
+```
+1. Check Your Balance
+2. Deposit an Amount
+3. Withdraw an Amount
+4. Check KYC
+5. Update KYC
+6. Quit
+```
+
+---
+
+## Functional Description
+
+### Check Balance
+
+Displays the current account balance.
+
+### Deposit Money
+
+Allows the user to deposit money into the account.
+
+**Validation**
+- Deposit amount must be greater than zero.
+
+### Withdraw Money
+
+Allows the user to withdraw money from the account.
+
+**Validation**
+- Withdrawal amount must be greater than zero.
+- Withdrawal amount cannot exceed the available account balance.
+
+### Check KYC
+
+Displays all stored KYC documents. If no documents are available, the application informs the user that KYC has not been completed.
+
+### Update KYC
+
+Allows users to add one or more KYC documents, which are stored in a Python dictionary.
+
+Example:
+
+```text
+Document Type : Aadhaar
+Document Number : 123456789012
+
+Document Type : PAN
+Document Number : ABCDE1234F
+```
+
+---
+
+## Sample Output
+
+```text
+Welcome to ABC Bank!!!
+
+1. Check Your Balance
+2. Deposit an Amount
+3. Withdraw an Amount
+4. Check KYC
+5. Update KYC
+6. Quit
+
+Enter your choice (1-6): 2
+
+Enter the amount to deposit: 5000
+
+Deposit was successful.
+```
+
+---
+
+## Python Concepts Demonstrated
+
+- Functions
+- Global Variables
+- Conditional Statements
+- Loops
+- Dictionaries
+- User Input Handling
+- Function Parameters
+- Dictionary Methods (`update()`)
+- `if __name__ == "__main__"`
+
+---
+
+## Data Structure Used
+
+### Dictionary
+
+KYC information is maintained using a dictionary.
+
+Example:
+
+```python
+{
+    "Aadhaar": "123456789012",
+    "PAN": "ABCDE1234F"
+}
+```
+
+---
+
+## Input Validation
+
+The application includes the following validations:
+
+- Prevents depositing zero or negative amounts.
+- Prevents withdrawing zero or negative amounts.
+- Prevents withdrawing more money than the available balance.
+- Displays an appropriate message when KYC information is unavailable.
+
+---
+
+## Future Enhancements
+
+- User authentication
+- PIN protection
+- Multiple account support
+- Transaction history
+- Fund transfer between accounts
+- Interest calculation
+- Persistent data storage using files
+- Database integration (SQLite/MySQL)
+- Graphical User Interface (Tkinter)
+- Web-based version using Flask or Django
+
+---
+
+## Author
+
+**Ojasvi Bhatnagar**
+GitHub: **https://github.com/Ojasvi-19**
